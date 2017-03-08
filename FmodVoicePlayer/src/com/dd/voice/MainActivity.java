@@ -25,6 +25,13 @@ public class MainActivity extends Activity implements OnTouchListener, Runnable 
 	//    这里还用到了C++标准模板库(STL), 需要额外配置, 添加Application.mk
 	//    common_platform.cpp中包名也需要修改
 	
+	
+	// 大致查看了一下音效代码, 流程如下:
+	// 1. 创建声音 system->createSound()
+	// 2. 播放声音 system->playSound()
+	// 3. 添加效果 system->createDSPByType()
+	//            mastergroup->addDSP()
+	
 	private TextView mTxtScreen;
 	private Thread mThread;
 	
